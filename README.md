@@ -1,6 +1,10 @@
 # Vinuthna Koganti - DevOps Portfolio
 
+Blog: [vinuthna.hashnode.dev](https://vinuthna.hashnode.dev/)
+
 A static professional portfolio evolved into an end-to-end DevOps reference project: Docker, GitHub Actions, Terraform, AWS EKS, Kubernetes, Argo CD, Prometheus, and Grafana.
+
+The website is available in English and French. It automatically follows the visitor's browser language on first visit and remembers manual EN/FR selection.
 
 ## Local run
 

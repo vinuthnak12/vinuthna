@@ -1,640 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Vinuthna Koganti | DevOps Engineer</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Vinuthna Koganti</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-			  <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/diu.1.jpeg);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Vinuthna Koganti</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'DevOps Engineer',
-						'Kubernetes Engineer',
-						'GitOps Practitioner',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Passionate DevOps Engineer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/kvinuthna" class="btn btn-primary py-3 px-4">LinkedIn</a>
-							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My work</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/diu.1.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Vinuthna Koganti</span></p>
-										<p><span class="title-s">Job Role: </span> <span>DevOps Engineer</span></p>
-										<p><span class="title-s">Experience: </span> <span>5 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Configuration Management</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Infrastructure as Code (IaC)</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span> Continuous Integration/Continuous Deployment (CI/CD) Tools</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Version Control Tools</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Containerization Tools</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>DevOps Engineer with a foundational background in BSc, leveraging a strong understanding of analytical and research methodologies to transition into cloud computing and automation. Passionate about integrating scientific principles with technology, I have gained hands-on experience with tools like Docker, Kubernetes, and Jenkins through dedicated learning and practical projects. My academic background equips me with a unique approach to problem-solving and process improvement, which I am eager to apply in a DevOps environment. Committed to continuous learning, I’m driven to contribute to the development and deployment of reliable, scalable systems..</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>DevOps Engineer</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Could computing &amp; AWS DevOps Engineer</span></li>
-									<li class="d-flex"><span>Education:</span> <span>BTech </span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Telugu & Hindi</span></li>
-									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft PowerBI &amp; </span></li> -->
-									<!-- li class="d-flex"><span>Other Skills:</span> <span>Cloud, Excel, Git, JIRA, Blogging,</span></li> -->
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Photography, Teaching, Sports & Books</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/kvinuthna" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p> Motivated and detail-oriented DevOps Engineer. Proficient in CI/CD pipelines, containerization, and cloud services.
-				Experienced with tools like Jenkins, Docker, Kubernetes, and AWS. Eager to leverage technical skills and collaborative
-				abilities to optimize deployment processes and enhance operational efficiency. Passionate about continuous learning and
-				implementing innovative solutions to improve system reliability and performance</p>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vinuthna Koganti - DevOps Engineer specialising in AWS, Kubernetes, Terraform, CI/CD and GitOps.">
+  <meta name="author" content="Vinuthna Koganti">
+  <title>Vinuthna Koganti | DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .language-switcher { display: flex; gap: .4rem; margin-left: 1rem; }
+    .language-switcher button { border: 1px solid #ffbd39; background: transparent; color: #fff; border-radius: 999px; padding: .3rem .7rem; cursor: pointer; }
+    .language-switcher button.active { background: #ffbd39; color: #111; }
+    .hero-copy { min-height: 100vh; display: flex; align-items: center; }
+    .eyebrow { color: #ffbd39; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
+    .tech-list { color: #ffbd39; font-weight: 500; }
+    .experience-card, .project-card { height: 100%; padding: 2rem; background: #1a1a1a; border-radius: .5rem; border-left: 3px solid #ffbd39; }
+    .experience-card ul { padding-left: 1.2rem; }
+    .skill-pill { display: inline-block; margin: .25rem; padding: .5rem .8rem; background: #222; border: 1px solid #444; border-radius: 999px; }
+    .section-title { margin-bottom: 2.5rem; }
+    .muted { color: #aaa; }
+    @media (max-width: 991px) { .language-switcher { margin: 1rem 0 0; } }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home-section">Vinuthna Koganti</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> <span data-i18n="menu">Menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span data-i18n="navHome">Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span data-i18n="navAbout">About</span></a></li>
+          <li class="nav-item"><a href="#experience-section" class="nav-link"><span data-i18n="navExperience">Experience</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span data-i18n="navProjects">Project</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span data-i18n="navContact">Contact</span></a></li>
+        </ul>
+        <div class="language-switcher" aria-label="Language selector">
+          <button type="button" data-lang="en" aria-label="View in English">EN</button>
+          <button type="button" data-lang="fr" aria-label="Voir en français">FR</button>
         </div>
+      </div>
+    </div>
+  </nav>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">March 2024</span>
-						<h2>Verizon Cloud Platform </h2>
-						<span class="position">Verizon</span>
-						<p class="mt-4">Verizon Cloud Platform Job Simulation on Forage - March 2024 
-							<ul>
-								<li>Completed a job simulation involving building a hypothetical new VPN product
-									for Verizon’s Cloud Computing team.</li>
-								<li> Used command line Python to test whether Verizon’s VPN met the cloud-native
-									traits, i.e. redundancy, resiliency and least-privilege.</li>
-								<li>Researched approaches to achieve application security and communicated
-									insights in a PowerPoint Presentation</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date"> March
-							2024. </span>
-						<h2>AWS APAC Solutions Architecture</h2>
-						<span class="position">AWS</span>
-						<p class="mt-4">AWS APAC Solutions Architecture virtual experience program on Forage - March
-							2024. 
-							<ul>
-								<li>Designed and simple and scalable hosting architecture based on Elastic
-									Beanstalk for a client experiencing significant growth and slow response
-									times.</li>
-								<li>Described my proposed architecture in plain language ensuring my client
-									understood how it works and how costs will be calculated for it.</li>
-								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2016-2020</span>
-    					<h2>BTech</h2>
-    					<span class="position">KL University</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2016</span>
-    					<h2>Intermediate</h2>
-    					<span class="position">Narayana Junior College</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on Complete Deployment .</p>
-          </div>
+  <section id="home-section" class="hero">
+    <div class="container hero-copy">
+      <div class="row align-items-center w-100">
+        <div class="col-lg-9">
+          <p class="eyebrow" data-i18n="hello">Hello, I am</p>
+          <h1 class="mb-4">Vinuthna <span>Koganti</span></h1>
+          <h2 data-i18n="heroRole">DevOps Engineer</h2>
+          <p class="tech-list">AWS · EKS · kOps · Kubernetes · Docker · Terraform · CI/CD · GitOps</p>
+          <p class="lead" data-i18n="heroText">I automate reliable cloud infrastructure and delivery platforms that help teams ship securely and confidently.</p>
+          <p>
+            <a href="#project-section" class="btn btn-primary py-3 px-4" data-i18n="viewProject">View DevOps project</a>
+            <a href="https://www.linkedin.com/in/kvinuthna" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+            <a href="https://vinuthna.hashnode.dev/" class="btn btn-white btn-outline-white py-3 px-4">Hashnode</a>
+          </p>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+      </div>
+    </div>
+  </section>
 
-                <h3 class="heading"><a href="#">Jenkins on Server Push Based Approach CICD</a></h3>
-                <p> Implementing Nginx as a Reverse Proxy for the PetClinic Application! 🐾
-					I’m excited to share a significant milestone in my recent deployment of the PetClinic application: integrating Nginx as a reverse proxy! This addition has greatly enhanced the app's performance and security.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="#">Project Guide On Jenkins Integration with Sonar Server: A Complete Guide</a></h3>
-                <p>I'm thrilled to share that we've completed a significant milestone in our development pipeline! We've integrated SonarQube with Jenkins, automating our code quality checks and boosting our development efficiency.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="#">Building and Testing a Flask App with Docker: A Step-by-Step Guide </a></h3>
-                <p>Creating and testing a Flask application using Docker can streamline your development process, ensuring consistency across different environments. </p>
-              </div>
-            </div>
-          </div>
+  <section class="ftco-section" id="about-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 heading-section text-center section-title">
+          <h2 data-i18n="aboutTitle">About me</h2>
+          <p data-i18n="aboutText">DevOps Engineer with 5 years of experience building CI/CD pipelines, containerising applications and automating AWS infrastructure. I work with Kubernetes platforms including Amazon EKS and kOps, and use Terraform and GitOps practices to create reliable, scalable and secure environments.</p>
+          <p data-i18n="learnerText">I am curious by nature and passionate about learning new technologies. Continuous learning, experimentation and knowledge sharing are central to how I improve systems and grow as an engineer.</p>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<!-- <div class="row d-flex justify-content-center">   -->
-			<!-- <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="#project-section" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="#project-section">GitOps delivery on Amazon EKS</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="#project-section" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="#project-section">Kubernetes observability platform</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div> -->
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="5000+">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="200">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 data-i18n="profileTitle">Profile</h3>
+          <p><strong data-i18n="locationLabel">Location:</strong> Paris, France</p>
+          <p><strong data-i18n="languagesLabel">Languages:</strong> <span data-i18n="languagesValue">English (fluent), French (professional), Hindi (native)</span></p>
+          <p><strong data-i18n="educationLabel">Education:</strong> <span data-i18n="educationValue">Master's in Software Engineering, EPITA</span></p>
+        </div>
+        <div class="col-md-6">
+          <h3 data-i18n="skillsTitle">Core skills</h3>
+          <div>
+            <span class="skill-pill">AWS: EC2, S3, IAM, VPC, CloudWatch, EKS</span>
+            <span class="skill-pill">Kubernetes, EKS, kOps, Helm</span>
+            <span class="skill-pill">Docker, Docker Compose</span>
+            <span class="skill-pill">Terraform, CloudFormation, Ansible</span>
+            <span class="skill-pill">Jenkins, GitHub Actions, GitLab CI, Argo CD</span>
+            <span class="skill-pill">Prometheus, Grafana</span>
+            <span class="skill-pill">Linux, Bash, Python, Git</span>
+            <span class="skill-pill">Trivy, OWASP</span>
           </div>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden Automation stories </h4>
-						<br>
-						<p><a href="#project-section" class="btn btn-primary py-3 px-5">View DevOps project</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    </div>
+  </section>
 
-
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
+  <section class="ftco-section bg-dark" id="experience-section">
+    <div class="container">
+      <div class="heading-section text-center section-title">
+        <h2 data-i18n="experienceTitle">Professional experience</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <article class="experience-card">
+            <span class="eyebrow" data-i18n="intellectDates">January 2024 - Present</span>
+            <h3>DevOps Engineer</h3>
+            <p class="muted">Intellect Design Arena · Paris, France</p>
+            <ul>
+              <li data-i18n="intellect1">Designed Jenkins and GitHub Actions pipelines, reducing deployment time by approximately 30%.</li>
+              <li data-i18n="intellect2">Implemented Argo CD GitOps workflows for consistent deployments to Kubernetes on Amazon EKS.</li>
+              <li data-i18n="intellect3">Managed AWS services including EC2, S3, IAM, VPC, CloudWatch and EKS for secure, highly available platforms.</li>
+              <li data-i18n="intellect4">Automated infrastructure with Terraform and CloudFormation and improved visibility with Prometheus and Grafana.</li>
+            </ul>
+          </article>
         </div>
+        <div class="col-lg-6 mb-4">
+          <article class="experience-card">
+            <span class="eyebrow" data-i18n="inubeDates">August 2020 - February 2022</span>
+            <h3>DevOps / CI-CD Engineer</h3>
+            <p class="muted">Inube Software Solutions · India</p>
+            <ul>
+              <li data-i18n="inube1">Maintained Jenkins pipelines and Git-based workflows to improve deployment stability.</li>
+              <li data-i18n="inube2">Supported test and pre-production releases and container orchestration with Docker and Kubernetes.</li>
+              <li data-i18n="inube3">Supported AWS deployments using EC2, S3 and VPC networking.</li>
+              <li data-i18n="inube4">Collaborated with development and QA teams to troubleshoot releases and improve delivery practices.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <article class="experience-card">
+            <span class="eyebrow" data-i18n="clinicDates">September 2019 - August 2020</span>
+            <h3>QA Engineer</h3>
+            <p class="muted">Make My Clinic · India</p>
+            <p data-i18n="clinicText">Contributed to application releases, environment preparation and release activities, building the quality mindset that continues to shape my DevOps work.</p>
+          </article>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <article class="experience-card">
+            <span class="eyebrow" data-i18n="educationTitle">Education</span>
+            <h3>EPITA</h3>
+            <p data-i18n="epitaText">Master's in Software Engineering · February 2022 - September 2023</p>
+            <h3 class="mt-4">V.K.R, V.N.B. &amp; A.G.K. University</h3>
+            <p data-i18n="bachelorText">Bachelor of Computer Science · August 2014 - August 2017</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Pune, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+100010001000</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:vinuthnakoganti12@gmail.com">vinuthnakoganti12@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">https://drive.google.com/file/d/1jCXWgqcTh-q3NmURRwIVurciEYUXiBUf/view?usp=sharing</a></p>
-	          </div>
-          </div>
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="heading-section text-center section-title">
+        <h2 data-i18n="projectTitle">Production-grade DevOps portfolio</h2>
+        <p data-i18n="projectIntro">This website is also a hands-on platform engineering project, designed to demonstrate the complete path from source code to an observable Kubernetes workload.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4"><div class="project-card"><h3>CI/CD &amp; Security</h3><p data-i18n="projectCi">GitHub Actions builds and smoke-tests the container, scans it with Trivy, and publishes multi-architecture GHCR images with SBOM and provenance.</p></div></div>
+        <div class="col-md-4 mb-4"><div class="project-card"><h3>AWS &amp; Kubernetes</h3><p data-i18n="projectAws">Terraform provisions a multi-AZ AWS VPC and Amazon EKS. Kubernetes overlays add probes, resource limits, disruption protection and network policy.</p></div></div>
+        <div class="col-md-4 mb-4"><div class="project-card"><h3>GitOps &amp; Observability</h3><p data-i18n="projectOps">Argo CD reconciles production state from Git while Prometheus, Blackbox Exporter, Grafana and Alertmanager monitor availability.</p></div></div>
+      </div>
+      <div class="text-center mt-4"><a href="docs/ROADMAP.md" class="btn btn-primary py-3 px-4" data-i18n="roadmapButton">Read the implementation roadmap</a></div>
+    </div>
+  </section>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSegcCfpVkPky4kYkjSap3oINnM9yII7P_vLPaqLzaojJekHbQ/viewform?usp=header" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/kvinuthna"><span class="icon-linkedin"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/hustling_guy77/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+  <section class="ftco-section contact-section" id="contact-section">
+    <div class="container text-center">
+      <div class="heading-section section-title">
+        <h2 data-i18n="contactTitle">Let's connect</h2>
+        <p data-i18n="contactText">I enjoy collaborating on cloud, automation, Kubernetes and platform engineering challenges.</p>
+      </div>
+      <p>Paris, France · <a href="mailto:vinuthnakoganti12@gmail.com">vinuthnakoganti12@gmail.com</a></p>
+      <p>
+        <a href="https://www.linkedin.com/in/kvinuthna" class="btn btn-primary py-3 px-4">LinkedIn</a>
+        <a href="https://vinuthna.hashnode.dev/" class="btn btn-white btn-outline-white py-3 px-4">Hashnode</a>
+      </p>
+    </div>
+  </section>
 
-
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
+  <footer class="ftco-footer ftco-section">
+    <div class="container text-center"><p>© <span id="year"></span> Vinuthna Koganti · <span data-i18n="footerText">Built with a continuous-learning mindset.</span></p></div>
+  </footer>
 
   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+  <script>
+    const translations = {
+      en: {
+        menu: 'Menu', navHome: 'Home', navAbout: 'About', navExperience: 'Experience', navProjects: 'Project', navContact: 'Contact',
+        hello: 'Hello, I am', heroRole: 'DevOps Engineer', heroText: 'I automate reliable cloud infrastructure and delivery platforms that help teams ship securely and confidently.', viewProject: 'View DevOps project',
+        aboutTitle: 'About me', aboutText: 'DevOps Engineer with 5 years of experience building CI/CD pipelines, containerising applications and automating AWS infrastructure. I work with Kubernetes platforms including Amazon EKS and kOps, and use Terraform and GitOps practices to create reliable, scalable and secure environments.', learnerText: 'I am curious by nature and passionate about learning new technologies. Continuous learning, experimentation and knowledge sharing are central to how I improve systems and grow as an engineer.',
+        profileTitle: 'Profile', locationLabel: 'Location:', languagesLabel: 'Languages:', languagesValue: 'English (fluent), French (professional), Hindi (native)', educationLabel: 'Education:', educationValue: "Master's in Software Engineering, EPITA", skillsTitle: 'Core skills',
+        experienceTitle: 'Professional experience', intellectDates: 'January 2024 - Present', intellect1: 'Designed Jenkins and GitHub Actions pipelines, reducing deployment time by approximately 30%.', intellect2: 'Implemented Argo CD GitOps workflows for consistent deployments to Kubernetes on Amazon EKS.', intellect3: 'Managed AWS services including EC2, S3, IAM, VPC, CloudWatch and EKS for secure, highly available platforms.', intellect4: 'Automated infrastructure with Terraform and CloudFormation and improved visibility with Prometheus and Grafana.',
+        inubeDates: 'August 2020 - February 2022', inube1: 'Maintained Jenkins pipelines and Git-based workflows to improve deployment stability.', inube2: 'Supported test and pre-production releases and container orchestration with Docker and Kubernetes.', inube3: 'Supported AWS deployments using EC2, S3 and VPC networking.', inube4: 'Collaborated with development and QA teams to troubleshoot releases and improve delivery practices.', clinicDates: 'September 2019 - August 2020', clinicText: 'Contributed to application releases, environment preparation and release activities, building the quality mindset that continues to shape my DevOps work.',
+        educationTitle: 'Education', epitaText: "Master's in Software Engineering · February 2022 - September 2023", bachelorText: 'Bachelor of Computer Science · August 2014 - August 2017',
+        projectTitle: 'Production-grade DevOps portfolio', projectIntro: 'This website is also a hands-on platform engineering project, designed to demonstrate the complete path from source code to an observable Kubernetes workload.', projectCi: 'GitHub Actions builds and smoke-tests the container, scans it with Trivy, and publishes multi-architecture GHCR images with SBOM and provenance.', projectAws: 'Terraform provisions a multi-AZ AWS VPC and Amazon EKS. Kubernetes overlays add probes, resource limits, disruption protection and network policy.', projectOps: 'Argo CD reconciles production state from Git while Prometheus, Blackbox Exporter, Grafana and Alertmanager monitor availability.', roadmapButton: 'Read the implementation roadmap',
+        contactTitle: "Let's connect", contactText: 'I enjoy collaborating on cloud, automation, Kubernetes and platform engineering challenges.', footerText: 'Built with a continuous-learning mindset.'
+      },
+      fr: {
+        menu: 'Menu', navHome: 'Accueil', navAbout: 'À propos', navExperience: 'Expérience', navProjects: 'Projet', navContact: 'Contact',
+        hello: 'Bonjour, je suis', heroRole: 'Ingénieure DevOps', heroText: 'J’automatise des infrastructures cloud et des plateformes de livraison fiables afin d’aider les équipes à déployer de manière sécurisée et sereine.', viewProject: 'Voir le projet DevOps',
+        aboutTitle: 'À propos de moi', aboutText: 'Ingénieure DevOps avec 5 ans d’expérience dans la création de pipelines CI/CD, la conteneurisation d’applications et l’automatisation d’infrastructures AWS. Je travaille avec des plateformes Kubernetes, notamment Amazon EKS et kOps, et j’utilise Terraform et les pratiques GitOps pour créer des environnements fiables, scalables et sécurisés.', learnerText: 'Curieuse de nature, je suis passionnée par l’apprentissage de nouvelles technologies. La formation continue, l’expérimentation et le partage de connaissances sont au cœur de ma façon d’améliorer les systèmes et de progresser en tant qu’ingénieure.',
+        profileTitle: 'Profil', locationLabel: 'Localisation :', languagesLabel: 'Langues :', languagesValue: 'Anglais (courant), français (professionnel), hindi (langue maternelle)', educationLabel: 'Formation :', educationValue: 'Master en génie logiciel, EPITA', skillsTitle: 'Compétences principales',
+        experienceTitle: 'Expérience professionnelle', intellectDates: 'Janvier 2024 - Aujourd’hui', intellect1: 'Conception de pipelines Jenkins et GitHub Actions, réduisant le temps de déploiement d’environ 30 %.', intellect2: 'Mise en place de workflows GitOps avec Argo CD pour des déploiements cohérents sur Kubernetes et Amazon EKS.', intellect3: 'Gestion des services AWS EC2, S3, IAM, VPC, CloudWatch et EKS pour des plateformes sécurisées et hautement disponibles.', intellect4: 'Automatisation de l’infrastructure avec Terraform et CloudFormation et amélioration de l’observabilité avec Prometheus et Grafana.',
+        inubeDates: 'Août 2020 - Février 2022', inube1: 'Maintenance des pipelines Jenkins et des workflows Git afin d’améliorer la stabilité des déploiements.', inube2: 'Support des déploiements en test et préproduction et de l’orchestration avec Docker et Kubernetes.', inube3: 'Support des déploiements AWS utilisant EC2, S3 et les réseaux VPC.', inube4: 'Collaboration avec les équipes de développement et QA pour résoudre les incidents de livraison et améliorer les pratiques.', clinicDates: 'Septembre 2019 - Août 2020', clinicText: 'Participation aux déploiements applicatifs, à la préparation des environnements et aux activités de release, développant une culture qualité qui guide encore mon travail DevOps.',
+        educationTitle: 'Formation', epitaText: 'Master en génie logiciel · Février 2022 - Septembre 2023', bachelorText: 'Licence en informatique · Août 2014 - Août 2017',
+        projectTitle: 'Portfolio DevOps prêt pour la production', projectIntro: 'Ce site est également un projet pratique de platform engineering qui illustre tout le parcours, du code source à une charge Kubernetes observable.', projectCi: 'GitHub Actions construit et teste le conteneur, l’analyse avec Trivy et publie des images GHCR multi-architectures avec SBOM et provenance.', projectAws: 'Terraform provisionne un VPC AWS multi-AZ et Amazon EKS. Les overlays Kubernetes ajoutent des probes, limites de ressources, protections contre les interruptions et politiques réseau.', projectOps: 'Argo CD réconcilie l’état de production depuis Git, tandis que Prometheus, Blackbox Exporter, Grafana et Alertmanager surveillent la disponibilité.', roadmapButton: 'Lire la feuille de route',
+        contactTitle: 'Échangeons', contactText: 'J’apprécie de collaborer sur des sujets cloud, automatisation, Kubernetes et platform engineering.', footerText: 'Conçu avec un état d’esprit d’apprentissage continu.'
+      }
+    };
+
+    function setLanguage(language) {
+      const lang = translations[language] ? language : 'en';
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const value = translations[lang][element.dataset.i18n];
+        if (value) element.textContent = value;
+      });
+      document.querySelectorAll('[data-lang]').forEach(button => {
+        const active = button.dataset.lang === lang;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', active.toString());
+      });
+      localStorage.setItem('portfolio-language', lang);
+    }
+
+    document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+    const savedLanguage = localStorage.getItem('portfolio-language');
+    const initialLanguage = savedLanguage || (navigator.language.toLowerCase().startsWith('fr') ? 'fr' : 'en');
+    document.getElementById('year').textContent = new Date().getFullYear();
+    setLanguage(initialLanguage);
+  </script>
+</body>
 </html>
