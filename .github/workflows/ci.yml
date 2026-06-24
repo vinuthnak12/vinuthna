@@ -1,0 +1,40 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - uses: azure/setup-kubectl@v4
+      - name: Validate Terraform
+        run: |
+          terraform -chdir=terraform fmt -check -recursive
+          terraform -chdir=terraform init -backend=false
+          terraform -chdir=terraform validate
+      - name: Render Kubernetes overlays
+        run: |
+          kubectl kustomize kubernetes/overlays/dev >/dev/null
+          kubectl kustomize kubernetes/overlays/prod >/dev/null
+      - name: Build image
+        run: docker build -t portfolio:${{ github.sha }} .
+      - name: Smoke test
+        run: |
+          docker run -d --name portfolio -p 8080:8080 portfolio:${{ github.sha }}
+          for i in {1..10}; do curl --fail http://localhost:8080/healthz && exit 0; sleep 2; done
+          docker logs portfolio
+          exit 1
+      - name: Scan image
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: portfolio:${{ github.sha }}
+          format: table
+          exit-code: '1'
+          severity: CRITICAL,HIGH

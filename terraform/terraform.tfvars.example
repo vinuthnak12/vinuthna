@@ -1,0 +1,4 @@
+aws_region         = "eu-west-3"
+cluster_name       = "vinuthna-portfolio"
+environment        = "prod"
+kubernetes_version = "1.30"

@@ -1,0 +1,20 @@
+grafana:
+  adminPassword: "change-me-via-secret"
+  persistence: { enabled: true, size: 5Gi }
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts: [grafana.example.com]
+prometheus:
+  prometheusSpec:
+    retention: 15d
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: [ReadWriteOnce]
+          resources: { requests: { storage: 20Gi } }
+alertmanager:
+  enabled: true
+
+# Install the probe target used by kubernetes/base/probe.yaml:
+# helm upgrade --install prometheus-blackbox-exporter prometheus-community/prometheus-blackbox-exporter -n monitoring

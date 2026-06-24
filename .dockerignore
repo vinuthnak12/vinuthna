@@ -1,0 +1,13 @@
+.git
+.github
+.terraform
+terraform
+kubernetes
+argocd
+monitoring
+docs
+README.md
+docker-compose.yml
+*.tfstate*
+*.pdf
+.DS_Store

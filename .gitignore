@@ -1,0 +1,8 @@
+.DS_Store
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform/backend.tf
+terraform/*.tfvars
+!terraform/*.tfvars.example
+crash.log
