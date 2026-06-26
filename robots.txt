@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vinuthna.io/sitemap.xml
+Sitemap: https://www.vinuthna.info/sitemap.xml
